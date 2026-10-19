@@ -1,4 +1,4 @@
-# E-bloc (personal) – integrare Home Assistant
+# E-42 (personal) – integrare Home Assistant
 
 Integrare proprie, scrisă de la zero, care citește contul tău e-bloc.ro direct, fără alt server intermediar și fără licență.
 
