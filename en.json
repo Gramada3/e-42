@@ -1,0 +1,55 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "e-bloc.ro account",
+        "description": "Enter the credentials you use in the e-bloc.ro app.",
+        "data": {
+          "email": "Email",
+          "password": "Password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate e-bloc.ro",
+        "description": "The password for {email} is no longer accepted. Enter the new password.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid email or password.",
+      "cannot_connect": "Cannot connect to e-bloc.ro."
+    },
+    "abort": {
+      "already_configured": "Account is already configured.",
+      "reauth_successful": "Re-authentication successful."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Options",
+        "data": {
+          "scan_interval_hours": "Update interval (hours, 1–24)"
+        }
+      }
+    }
+  },
+  "services": {
+    "trimite_index": {
+      "name": "Submit meter reading",
+      "description": "Send a new meter reading to e-bloc.ro.",
+      "fields": {
+        "entity_id": {
+          "name": "Meter",
+          "description": "The meter's “Index …” sensor or “Index nou …” number entity."
+        },
+        "valoare": {
+          "name": "Value",
+          "description": "New reading, in the meter's unit (e.g. 123.456 m³)."
+        }
+      }
+    }
+  }
+}
